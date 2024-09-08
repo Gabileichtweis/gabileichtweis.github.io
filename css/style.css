@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(22, 32, 93);
+}
+
+footer {
+  background-color: rgb(221, 229, 227);
+  color: rgb(22, 32, 93);
+}
+
+form {
+  justify-content: space-around;
+}
+
+#title {
+  color: beige;
+}
+
+#formLogin {
+  background-color: rgb(221, 229, 227);
+  width: 20%;
+}
+
+#formCadastro {
+  background-color: rgb(221, 229, 227);
+  width: 40%;
+}
+
+#imgHome {
+  height: 200px;
+  width: 400px;
+}
+
+.card-home {
+  background-color: transparent;
+  border: none;
+  color: rgb(221, 229, 227);
+  height: 300px;
+  width: 1000px;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #fffeea00;
+  color: rgb(22, 32, 93);
+  border-color: rgb(22, 32, 93);
+}
+
+.btn:hover {
+  background-color: rgb(22, 32, 93);
+  color: rgb(221, 229, 227);
+}
+
+.img-loja {
+  width: 300px;
+  height: 200px;
+}
+
+.cards-loja {
+  display: flex;
+  flex-direction: row;
+}
