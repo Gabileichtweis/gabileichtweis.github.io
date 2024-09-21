@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <title>PetShop - Agendamento</title>
+
+    <script>
+      function mostrarAlerta() {
+        alert('Agendamento realizado com sucesso!');
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -70,10 +76,116 @@
         </div>
       </nav>
     </header>
+
     <main
       class="container-fluid d-flex flex-column justify-content-center align-items-center"
     >
-      <h1>Agendamento</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img
+              id="img-agendamento"
+              src="../assets/img3.jpg"
+              alt="Cachorro e bolhas de sabão"
+            />
+            <p class="texto-agendamento">Banho (P) - R$80,00</p>
+            <p class="texto-agendamento">Banho (G) - R$100,00</p>
+            <p class="texto-agendamento">Tosa (P) - R$50,00</p>
+            <p class="texto-agendamento">Tosa (G) - R$80,00</p>
+          </div>
+
+          <div class="col-6">
+            <form id="formAgendamento" class="rounded-4 p-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <p>SERVIÇO</p>
+                    <input type="checkbox" id="servico1" value="banho" />
+                    <label for="servico1" class="form-label">Banho</label><br />
+                    <input type="checkbox" id="servico2" value="tosa" />
+                    <label for="servico2" class="form-label">Tosa</label>
+
+                    <br />
+
+                    <p>PORTE</p>
+                    <input
+                      type="radio"
+                      id="pequeno"
+                      name="porte"
+                      value="pequeno"
+                    />
+                    <label for="pequeno">Pequeno</label><br />
+                    <input
+                      type="radio"
+                      id="grande"
+                      name="porte"
+                      value="grande"
+                    />
+                    <label for="grande">Grande</label><br />
+
+                    <br />
+
+                    <p>TELE-BUSCA</p>
+                    <input type="radio" id="sim" name="busca" value="sim" />
+                    <label for="sim">Sim</label><br />
+                    <input type="radio" id="nao" name="busca" value="nao" />
+                    <label for="nao">Não</label><br />
+                  </div>
+
+                  <div class="col-6">
+                    <p>DATA</p>
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" />
+                    <br />
+                    <br />
+
+                    <p>HORÁRIO</p>
+                    <input type="radio" id="9:00" name="busca" value="9:00" />
+                    <label for="9:00" class="me-5">09:00</label>
+                    <input type="radio" id="10:00" name="busca" value="10:00" />
+                    <label for="10:00" class="me-5">10:00</label>
+                    <input type="radio" id="11:00" name="busca" value="11:00" />
+                    <label for="11:00">11:00</label><br />
+                    <input type="radio" id="14:00" name="busca" value="14:00" />
+                    <label for="14:00" class="me-5">14:00</label>
+                    <input type="radio" id="15:00" name="busca" value="15:00" />
+                    <label for="15:00" class="me-5">15:00</label>
+                    <input type="radio" id="16:00" name="busca" value="16:00" />
+                    <label for="16:00">16:00</label>
+
+                    <br />
+                    <br />
+
+                    <p>PET</p>
+                    <input
+                      type="text"
+                      name="nome"
+                      id="nome"
+                      placeholder="Nome do pet"
+                    />
+                    <input
+                      type="text"
+                      name="raca"
+                      id="raca"
+                      placeholder="Raça do pet"
+                    />
+                    <input
+                      type="text"
+                      name="temperamento"
+                      id="temperamento"
+                      placeholder="Temperamento do pet"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <button onclick="mostrarAlerta()">Agendar</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer id="footer">

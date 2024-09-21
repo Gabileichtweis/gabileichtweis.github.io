@@ -37,6 +37,20 @@ form {
   width: 400px;
 }
 
+#carouselLoja {
+  width: 600px;
+  height: 400px;
+}
+
+#img-agendamento {
+  height: 400px;
+  width: 400px;
+}
+
+#formAgendamento {
+  background-color: rgb(221, 229, 227);
+}
+
 .card-home {
   background-color: transparent;
   border: none;
@@ -61,11 +75,15 @@ form {
 }
 
 .img-loja {
-  width: 300px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
 }
 
 .cards-loja {
   display: flex;
   flex-direction: row;
+}
+
+.texto-agendamento {
+  color: white;
 }
